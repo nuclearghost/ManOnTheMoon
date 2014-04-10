@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.titleLabel.font = [UIFont fontWithName:@"NasalizationRg-Regular" size:37];
+    self.titleButton.titleLabel.font = [UIFont fontWithName:@"NasalizationRg-Regular" size:47];
     self.creditsButton.titleLabel.font = [UIFont fontWithName:@"NasalizationRg-Regular" size:17];
 }
 
@@ -50,5 +50,33 @@
 
 - (IBAction)creditsTapped:(id)sender {
     NSLog(@"creditsButtonTapped");
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Are you an adult?" message:@"What year did Apollo 11 land on the moon?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Confirm", nil];
+    av.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [av show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1)
+    {
+        NSString *textInput = [[alertView textFieldAtIndex:0] text];
+        if ([textInput isEqual: @"1969"])
+        {
+            NSLog(@"Adult");
+            //TODO go to credits screen
+            [self performSegueWithIdentifier:@"creditsSegue" sender:self];
+        }
+        else
+        {
+            NSLog(@"Child or uneducated");
+        }
+            
+    }
+}
+
+- (IBAction)titleTapped:(id)sender {
+    NSLog(@"titleButtonTapped");
+  [self performSegueWithIdentifier:@"storySegue" sender:self];
+
 }
 @end

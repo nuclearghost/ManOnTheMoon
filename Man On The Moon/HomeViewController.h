@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UIAlertViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *titleButton;
 @property (weak, nonatomic) IBOutlet UIButton *creditsButton;
 
 - (IBAction)creditsTapped:(id)sender;
+- (IBAction)titleTapped:(id)sender;
 
 @end
