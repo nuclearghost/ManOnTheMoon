@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F319750B18F8C4B50072639E /* Pages.plist in Resources */ = {isa = PBXBuildFile; fileRef = F319750A18F8C4B50072639E /* Pages.plist */; };
+		F319750E18F8CDF90072639E /* PageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F319750D18F8CDF90072639E /* PageModel.m */; };
+		F319751118F8DC570072639E /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F319751018F8DC570072639E /* Page1ViewController.m */; };
+		F35345A318F62CA0008888AF /* OneSmallStep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F35345A218F62CA0008888AF /* OneSmallStep.mp4 */; };
+		F35345A518F62DCE008888AF /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = F35345A418F62DCE008888AF /* View.xib */; };
 		F3D8807C18F0CC5D005D4797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807B18F0CC5D005D4797 /* Foundation.framework */; };
 		F3D8807E18F0CC5D005D4797 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */; };
 		F3D8808018F0CC5D005D4797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807F18F0CC5D005D4797 /* UIKit.framework */; };
@@ -38,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F319750A18F8C4B50072639E /* Pages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Pages.plist; sourceTree = "<group>"; };
+		F319750C18F8CDF90072639E /* PageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageModel.h; sourceTree = "<group>"; };
+		F319750D18F8CDF90072639E /* PageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageModel.m; sourceTree = "<group>"; };
+		F319750F18F8DC570072639E /* Page1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1ViewController.h; sourceTree = "<group>"; };
+		F319751018F8DC570072639E /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
+		F35345A218F62CA0008888AF /* OneSmallStep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OneSmallStep.mp4; sourceTree = "<group>"; };
+		F35345A418F62DCE008888AF /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		F3D8807818F0CC5D005D4797 /* Man On The Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Man On The Moon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8807B18F0CC5D005D4797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,7 +146,13 @@
 				F3D8809118F0CC5D005D4797 /* DataViewController.m */,
 				F3D8809318F0CC5D005D4797 /* ModelController.h */,
 				F3D8809418F0CC5D005D4797 /* ModelController.m */,
+				F319750F18F8DC570072639E /* Page1ViewController.h */,
+				F319751018F8DC570072639E /* Page1ViewController.m */,
+				F319750C18F8CDF90072639E /* PageModel.h */,
+				F319750D18F8CDF90072639E /* PageModel.m */,
+				F319750A18F8C4B50072639E /* Pages.plist */,
 				F3D8809618F0CC5D005D4797 /* Main.storyboard */,
+				F35345A418F62DCE008888AF /* View.xib */,
 				F3D880B918F0D99E005D4797 /* HomeViewController.h */,
 				F3D880BA18F0D99E005D4797 /* HomeViewController.m */,
 				F3D8809918F0CC5D005D4797 /* Images.xcassets */,
@@ -175,6 +193,7 @@
 		F3D880B618F0D262005D4797 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F35345A218F62CA0008888AF /* OneSmallStep.mp4 */,
 				F3D880B718F0D280005D4797 /* nasalization-rg.ttf */,
 			);
 			name = Resources;
@@ -260,6 +279,9 @@
 				F3D880B818F0D280005D4797 /* nasalization-rg.ttf in Resources */,
 				F3D8808618F0CC5D005D4797 /* InfoPlist.strings in Resources */,
 				F3D8809818F0CC5D005D4797 /* Main.storyboard in Resources */,
+				F319750B18F8C4B50072639E /* Pages.plist in Resources */,
+				F35345A518F62DCE008888AF /* View.xib in Resources */,
+				F35345A318F62CA0008888AF /* OneSmallStep.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F319750E18F8CDF90072639E /* PageModel.m in Sources */,
 				F3D8809218F0CC5D005D4797 /* DataViewController.m in Sources */,
 				F3D8808C18F0CC5D005D4797 /* AppDelegate.m in Sources */,
 				F3D8809518F0CC5D005D4797 /* ModelController.m in Sources */,
 				F3D8808818F0CC5D005D4797 /* main.m in Sources */,
+				F319751118F8DC570072639E /* Page1ViewController.m in Sources */,
 				F3D8808F18F0CC5D005D4797 /* RootViewController.m in Sources */,
 				F3D880BB18F0D99E005D4797 /* HomeViewController.m in Sources */,
 			);
@@ -490,6 +514,7 @@
 				F3D880B218F0CC5D005D4797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3D880B318F0CC5D005D4797 /* Build configuration list for PBXNativeTarget "Man On The MoonTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +523,7 @@
 				F3D880B518F0CC5D005D4797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

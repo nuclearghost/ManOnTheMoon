@@ -49,6 +49,64 @@
             </objects>
             <point key="canvasLocation" x="13" y="931"/>
         </scene>
+        <!--Page1 View Controller-->
+        <scene sceneID="gy0-If-KDA">
+            <objects>
+                <viewController storyboardIdentifier="Page1ViewController" id="PIu-uo-OU3" customClass="Page1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sjj-cf-hDq"/>
+                        <viewControllerLayoutGuide type="bottom" id="DAg-xL-nwu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S9c-Cb-YP3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HZ2-of-LX1">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1036"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jets" translatesAutoresizingMaskIntoConstraints="NO" id="TYl-Ap-hcq">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neil Armstrong first gained a love for flying in the navy " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05K-6e-FUd">
+                                <rect key="frame" x="20" y="549" width="728" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvS-h4-gpS">
+                                <rect key="frame" x="720" y="972" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeTapped:" destination="PIu-uo-OU3" eventType="touchUpInside" id="4gV-cM-12W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-Vw-ywU">
+                                <rect key="frame" x="687" y="972" width="25" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="PIu-uo-OU3" eventType="touchUpInside" id="bnC-tQ-tCa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="05K-6e-FUd" id="1Dl-U2-SSG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Iy-MH-4rS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="914"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="NHN-3D-c8R">
             <objects>
@@ -88,6 +146,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="creditsButton" destination="JCD-eW-3fk" id="80T-pa-h3D"/>
                         <outlet property="titleButton" destination="hnu-Ai-7Gq" id="KeU-2k-XPg"/>
@@ -143,6 +202,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="EarthBackground" width="768" height="1024"/>
+        <image name="Home" width="25" height="25"/>
+        <image name="Jets" width="904" height="467"/>
+        <image name="Play" width="17" height="22"/>
         <image name="Pose" width="805" height="1024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

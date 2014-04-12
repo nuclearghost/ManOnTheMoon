@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageModel.h"
 
 @class DataViewController;
 

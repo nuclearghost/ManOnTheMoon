@@ -11,8 +11,6 @@
 #import "DataViewController.h"
 
 /*
- A controller object that manages a simple model -- a collection of month names.
- 
  The controller serves as the data source for the page view controller; it therefore implements pageViewController:viewControllerBeforeViewController: and pageViewController:viewControllerAfterViewController:.
  It also implements a custom method, viewControllerAtIndex: which is useful in the implementation of the data source methods, and in the initial configuration of the application.
  
@@ -20,7 +18,7 @@
  */
 
 @interface ModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
+@property (readonly, strong, nonatomic) NSMutableArray *pageData;
 @end
 
 @implementation ModelController
@@ -29,9 +27,9 @@
 {
     self = [super init];
     if (self) {
-        // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+      NSString *path = [[NSBundle mainBundle] pathForResource:@"Pages" ofType:@"plist"];
+      
+      _pageData = [[NSMutableArray alloc] initWithContentsOfFile:path];
     }
     return self;
 }
@@ -42,18 +40,19 @@
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
     }
-    
+  
+    PageModel *pm = [[PageModel alloc] initWith:self.pageData[index]];
+  
     // Create a new view controller and pass suitable data.
-    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
-    dataViewController.dataObject = self.pageData[index];
+    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:pm.Name];
+    dataViewController.pageIndex = index;
     return dataViewController;
 }
 
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController
 {   
-     // Return the index of the given data view controller.
-     // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-    return [self.pageData indexOfObject:viewController.dataObject];
+    // Return the index of the given data view controller.
+    return viewController.pageIndex;
 }
 
 #pragma mark - Page View Controller Data Source

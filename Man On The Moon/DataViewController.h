@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@import AVFoundation;
 
-@interface DataViewController : UIViewController
+@interface DataViewController : UIViewController <AVSpeechSynthesizerDelegate>
 
-@property (strong, nonatomic) IBOutlet UILabel *dataLabel;
-@property (strong, nonatomic) id dataObject;
+@property (strong, nonatomic) NSString *utteranceString;
+@property (weak, nonatomic) IBOutlet UILabel *utteranceLabel;
+@property (nonatomic) NSUInteger pageIndex;
+
+- (void)speakUtterance;
 
 @end
