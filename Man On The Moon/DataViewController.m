@@ -37,11 +37,11 @@
     self.utterance = [[AVSpeechUtterance alloc] initWithString:self.utteranceString];
     self.utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:self.utterance.speechString];
 
-    self.utteranceLabel.font = [UIFont fontWithName:@"NasalizationRg-Regular" size:37];
+    self.utteranceLabel.font = [UIFont fontWithName:@"NasalizationRg-Regular" size:20];
   
     self.utterance.rate = AVSpeechUtteranceDefaultSpeechRate;
-    self.utterance.preUtteranceDelay = 0.3f;
-    self.utterance.postUtteranceDelay = 0.3f;
+    self.utterance.preUtteranceDelay = 0.5f;
+    self.utterance.postUtteranceDelay = 0.5f;
 }
 
 - (void)speakUtterance
