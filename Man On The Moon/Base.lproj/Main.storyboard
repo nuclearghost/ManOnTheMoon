@@ -67,6 +67,70 @@
             </objects>
             <point key="canvasLocation" x="13" y="931"/>
         </scene>
+        <!--Page4 View Controller-->
+        <scene sceneID="kWT-bb-XT1">
+            <objects>
+                <viewController storyboardIdentifier="Page4ViewController" id="Dlv-gK-BzZ" customClass="Page4ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WCX-o1-NF7"/>
+                        <viewControllerLayoutGuide type="bottom" id="EBD-8g-qYK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d6d-H0-KSl">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zGW-7r-RNr">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alU-e2-uIM">
+                                <rect key="frame" x="20" y="20" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeTapped:" destination="Dlv-gK-BzZ" eventType="touchUpInside" id="Wfh-BH-gS9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3Y-Y4-qD5">
+                                <rect key="frame" x="63" y="23" width="17" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="Dlv-gK-BzZ" eventType="touchUpInside" id="0MP-bi-jzQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Armstrong flew on Gemini 8, where he completed the first in space docking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="580" translatesAutoresizingMaskIntoConstraints="NO" id="tLJ-I5-ox9">
+                                <rect key="frame" x="94" y="178" width="580" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gemini" translatesAutoresizingMaskIntoConstraints="NO" id="NON-6u-Ydn">
+                                <rect key="frame" x="20" y="543" width="121" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Agena" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-fC-eze">
+                                <rect key="frame" x="439" y="469" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="agenaImg" destination="YNm-fC-eze" id="VMZ-pJ-3ZW"/>
+                        <outlet property="geminiImg" destination="NON-6u-Ydn" id="H0S-Lf-uKj"/>
+                        <outlet property="textLabel" destination="tLJ-I5-ox9" id="XZK-KV-Eut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQE-QW-gYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="914"/>
+        </scene>
         <!--Page1 View Controller-->
         <scene sceneID="gy0-If-KDA">
             <objects>
@@ -84,7 +148,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jets" translatesAutoresizingMaskIntoConstraints="NO" id="TYl-Ap-hcq">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="410"/>
+                                <rect key="frame" x="0.0" y="72" width="768" height="410"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neil Armstrong first gained a love for flying in the navy " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="728" translatesAutoresizingMaskIntoConstraints="NO" id="05K-6e-FUd">
@@ -95,7 +159,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvS-h4-gpS">
-                                <rect key="frame" x="720" y="972" width="28" height="25"/>
+                                <rect key="frame" x="20" y="20" width="28" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,7 +169,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-Vw-ywU">
-                                <rect key="frame" x="687" y="972" width="25" height="32"/>
+                                <rect key="frame" x="56" y="20" width="25" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,12 +290,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Agena" width="218" height="99"/>
         <image name="EarthBackground" width="768" height="1024"/>
+        <image name="Gemini" width="140" height="83"/>
         <image name="Home" width="25" height="25"/>
         <image name="Jets" width="904" height="467"/>
         <image name="Navy" width="283" height="382"/>
         <image name="Play" width="17" height="22"/>
         <image name="Pose" width="805" height="1024"/>
+        <image name="StarsBackground" width="768" height="1024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

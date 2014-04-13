@@ -10,9 +10,21 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Page2ViewController</string>
+		<string>Page2View</string>
 		<key>Nib</key>
 		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Page3View</string>
+		<key>Nib</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Page4ViewController</string>
+		<key>Nib</key>
+		<false/>
 	</dict>
 </array>
 </plist>

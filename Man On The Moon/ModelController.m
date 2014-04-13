@@ -19,6 +19,7 @@
 
 @interface ModelController()
 @property (readonly, strong, nonatomic) NSMutableArray *pageData;
+@property (strong, nonatomic) UIStoryboard *sboard;
 @end
 
 @implementation ModelController
@@ -41,12 +42,16 @@
         return nil;
     }
   
+  if (self.sboard == nil && storyboard != nil) {
+    self.sboard = storyboard;
+  }
+  
     PageModel *pm = [[PageModel alloc] initWith:self.pageData[index]];
   
     // Create a new view controller and pass suitable data.
   DataViewController *dataViewController;
   if (pm.Nib == NO) {
-    dataViewController = [storyboard instantiateViewControllerWithIdentifier:pm.Name];
+    dataViewController = [self.sboard instantiateViewControllerWithIdentifier:pm.Name];
   } else {
     dataViewController = [[DataViewController alloc] initWithNibName:pm.Name bundle:nil];
   }

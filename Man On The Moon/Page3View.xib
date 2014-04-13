@@ -19,15 +19,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x51" translatesAutoresizingMaskIntoConstraints="NO" id="53C-fy-s2a">
-                    <rect key="frame" x="-6" y="486" width="780" height="538"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="After the war, Armstrong became a test pilot. He once flew an x 51 at mach 5 at an altitude of 200,000 feet" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="614" translatesAutoresizingMaskIntoConstraints="NO" id="PAX-Mc-UOP">
-                    <rect key="frame" x="77" y="151" width="614" height="97"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Armstrong then became an astronaut as part of NASA's &quot;new nine&quot;" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="614" translatesAutoresizingMaskIntoConstraints="NO" id="PAX-Mc-UOP">
+                    <rect key="frame" x="77" y="352" width="614" height="97"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK6-bs-vtc">
@@ -50,6 +46,14 @@
                         <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="XjP-e0-2WB"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Prelaunch" translatesAutoresizingMaskIntoConstraints="NO" id="kHX-tR-cnH">
+                    <rect key="frame" x="0.0" y="523" width="768" height="501"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SpaceSuit" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-eG-kzb">
+                    <rect key="frame" x="508" y="21" width="240" height="323"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -59,6 +63,7 @@
         <image name="EarthBackground" width="768" height="1024"/>
         <image name="Home" width="25" height="25"/>
         <image name="Play" width="17" height="22"/>
-        <image name="x51" width="768" height="602"/>
+        <image name="Prelaunch" width="640" height="416"/>
+        <image name="SpaceSuit" width="401" height="511"/>
     </resources>
 </document>
