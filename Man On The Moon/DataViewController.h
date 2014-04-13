@@ -16,5 +16,6 @@
 @property (nonatomic) NSUInteger pageIndex;
 
 - (void)speakUtterance;
+- (void)returnHome;
 
 @end

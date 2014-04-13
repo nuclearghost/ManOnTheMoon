@@ -44,9 +44,15 @@
     self.utterance.postUtteranceDelay = 0.5f;
 }
 
+#pragma mark - Public methods
 - (void)speakUtterance
 {
   [self.speechSynthesizer speakUtterance:self.utterance];
+}
+
+- (void)returnHome
+{
+  
 }
 
 #pragma mark - AVSpeechSynthesizerDelegate

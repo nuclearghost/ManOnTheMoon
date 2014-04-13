@@ -12,6 +12,7 @@
 		F319751118F8DC570072639E /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F319751018F8DC570072639E /* Page1ViewController.m */; };
 		F35345A318F62CA0008888AF /* OneSmallStep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F35345A218F62CA0008888AF /* OneSmallStep.mp4 */; };
 		F35345A518F62DCE008888AF /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = F35345A418F62DCE008888AF /* View.xib */; };
+		F363C53118FAFA83007CAC64 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C53018FAFA83007CAC64 /* CreditsViewController.m */; };
 		F3D8807C18F0CC5D005D4797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807B18F0CC5D005D4797 /* Foundation.framework */; };
 		F3D8807E18F0CC5D005D4797 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */; };
 		F3D8808018F0CC5D005D4797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807F18F0CC5D005D4797 /* UIKit.framework */; };
@@ -50,6 +51,8 @@
 		F319751018F8DC570072639E /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
 		F35345A218F62CA0008888AF /* OneSmallStep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OneSmallStep.mp4; sourceTree = "<group>"; };
 		F35345A418F62DCE008888AF /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		F363C52F18FAFA83007CAC64 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		F363C53018FAFA83007CAC64 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		F3D8807818F0CC5D005D4797 /* Man On The Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Man On The Moon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8807B18F0CC5D005D4797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +158,8 @@
 				F35345A418F62DCE008888AF /* View.xib */,
 				F3D880B918F0D99E005D4797 /* HomeViewController.h */,
 				F3D880BA18F0D99E005D4797 /* HomeViewController.m */,
+				F363C52F18FAFA83007CAC64 /* CreditsViewController.h */,
+				F363C53018FAFA83007CAC64 /* CreditsViewController.m */,
 				F3D8809918F0CC5D005D4797 /* Images.xcassets */,
 				F3D8808218F0CC5D005D4797 /* Supporting Files */,
 			);
@@ -303,6 +308,7 @@
 				F319750E18F8CDF90072639E /* PageModel.m in Sources */,
 				F3D8809218F0CC5D005D4797 /* DataViewController.m in Sources */,
 				F3D8808C18F0CC5D005D4797 /* AppDelegate.m in Sources */,
+				F363C53118FAFA83007CAC64 /* CreditsViewController.m in Sources */,
 				F3D8809518F0CC5D005D4797 /* ModelController.m in Sources */,
 				F3D8808818F0CC5D005D4797 /* main.m in Sources */,
 				F319751118F8DC570072639E /* Page1ViewController.m in Sources */,
