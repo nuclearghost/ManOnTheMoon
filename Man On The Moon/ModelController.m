@@ -44,7 +44,12 @@
     PageModel *pm = [[PageModel alloc] initWith:self.pageData[index]];
   
     // Create a new view controller and pass suitable data.
-    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:pm.Name];
+  DataViewController *dataViewController;
+  if (pm.Nib == NO) {
+    dataViewController = [storyboard instantiateViewControllerWithIdentifier:pm.Name];
+  } else {
+    dataViewController = [[DataViewController alloc] initWithNibName:pm.Name bundle:nil];
+  }
     dataViewController.pageIndex = index;
     return dataViewController;
 }

@@ -18,4 +18,9 @@
 - (void)speakUtterance;
 - (void)returnHome;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+
+- (IBAction)homeTapped:(id)sender;
+- (IBAction)playTapped:(id)sender;
 @end

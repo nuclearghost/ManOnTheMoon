@@ -8,5 +8,11 @@
 		<key>Nib</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Page2ViewController</string>
+		<key>Nib</key>
+		<true/>
+	</dict>
 </array>
 </plist>

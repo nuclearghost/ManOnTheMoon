@@ -22,6 +22,11 @@
 
     self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
     self.speechSynthesizer.delegate = self;
+  
+  if (self.textLabel != nil) {
+    self.utteranceLabel = self.textLabel;
+    self.utteranceString = self.textLabel.text;
+  }
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +62,16 @@
    object:self];
 }
 
+- (IBAction)playTapped:(id)sender {
+  NSLog(@"play tapped");
+  [self speakUtterance];
+}
+
+- (IBAction)homeTapped:(id)sender {
+  NSLog(@"home tapped");
+  [self returnHome];
+}
+
 #pragma mark - AVSpeechSynthesizerDelegate
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
@@ -80,5 +95,6 @@
 {
   self.utteranceLabel.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
 }
+
 
 @end
