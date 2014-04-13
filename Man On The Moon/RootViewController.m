@@ -45,6 +45,11 @@
 
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(returnHome:)
+                                               name:@"ReturnHome"
+                                             object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,6 +105,12 @@
 
 
     return UIPageViewControllerSpineLocationMid;
+}
+
+#pragma mark
+- (void)returnHome:(NSNotification *)notification
+{
+  [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

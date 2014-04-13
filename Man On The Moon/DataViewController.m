@@ -52,7 +52,9 @@
 
 - (void)returnHome
 {
-  
+  [[NSNotificationCenter defaultCenter]
+   postNotificationName:@"ReturnHome"
+   object:self];
 }
 
 #pragma mark - AVSpeechSynthesizerDelegate

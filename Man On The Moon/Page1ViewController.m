@@ -54,5 +54,6 @@
 
 - (IBAction)homeTapped:(id)sender {
     NSLog(@"home tapped");
+  [self returnHome];
 }
 @end
