@@ -10,9 +10,6 @@
 
 @interface Page1ViewController : DataViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-
-- (IBAction)playTapped:(id)sender;
-- (IBAction)homeTapped:(id)sender;
+- (IBAction)jetsTapped:(id)sender;
 
 @end

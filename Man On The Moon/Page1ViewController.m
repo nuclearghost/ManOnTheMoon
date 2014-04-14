@@ -25,9 +25,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  
-    self.utteranceLabel = self.textLabel;
-    self.utteranceString = self.textLabel.text;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,13 +33,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)playTapped:(id)sender {
-  NSLog(@"play tapped");
-  [self speakUtterance];
+- (IBAction)jetsTapped:(id)sender {
+  NSString *squishPath = [[NSBundle mainBundle]pathForResource:@"Jet" ofType:@"caf"];
+  NSURL *squishURL = [NSURL fileURLWithPath:squishPath];
+  SystemSoundID squishSoundID;
+  AudioServicesCreateSystemSoundID((__bridge CFURLRef)squishURL, &squishSoundID);
+  AudioServicesAddSystemSoundCompletion (squishSoundID, NULL, NULL,MyAudioServicesSystemSoundCompletionProc,(__bridge void *)(self));
+  AudioServicesPlaySystemSound(squishSoundID);
 }
 
-- (IBAction)homeTapped:(id)sender {
-    NSLog(@"home tapped");
-  [self returnHome];
+void MyAudioServicesSystemSoundCompletionProc(SystemSoundID ssID,  void *clientData)
+{
+  NSLog(@"%s :: Release Sound", __PRETTY_FUNCTION__);
+  AudioServicesDisposeSystemSoundID(ssID);
 }
 @end
