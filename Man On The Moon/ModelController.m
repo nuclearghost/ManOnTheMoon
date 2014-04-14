@@ -42,6 +42,10 @@
         return nil;
     }
   
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  [defaults setInteger:index forKey:@"page"];
+  [defaults synchronize];
+  
   if (self.sboard == nil && storyboard != nil) {
     self.sboard = storyboard;
   }
