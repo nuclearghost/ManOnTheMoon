@@ -19,6 +19,7 @@
 		F363C54618FB7756007CAC64 /* One.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F363C54518FB7756007CAC64 /* One.mp4 */; };
 		F363C54818FB788A007CAC64 /* OneStep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F363C54718FB788A007CAC64 /* OneStep.mp3 */; };
 		F363C54A18FB841D007CAC64 /* Jet.caf in Resources */ = {isa = PBXBuildFile; fileRef = F363C54918FB841D007CAC64 /* Jet.caf */; };
+		F3D62A1118FC96C30090BF00 /* nasalization-rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D62A1018FC96C30090BF00 /* nasalization-rg.ttf */; };
 		F3D8807C18F0CC5D005D4797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807B18F0CC5D005D4797 /* Foundation.framework */; };
 		F3D8807E18F0CC5D005D4797 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */; };
 		F3D8808018F0CC5D005D4797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807F18F0CC5D005D4797 /* UIKit.framework */; };
@@ -35,7 +36,6 @@
 		F3D880A318F0CC5D005D4797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807F18F0CC5D005D4797 /* UIKit.framework */; };
 		F3D880AB18F0CC5D005D4797 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3D880A918F0CC5D005D4797 /* InfoPlist.strings */; };
 		F3D880AD18F0CC5D005D4797 /* Man_On_The_MoonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D880AC18F0CC5D005D4797 /* Man_On_The_MoonTests.m */; };
-		F3D880B818F0D280005D4797 /* nasalization-rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D880B718F0D280005D4797 /* nasalization-rg.ttf */; };
 		F3D880BB18F0D99E005D4797 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D880BA18F0D99E005D4797 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +68,7 @@
 		F363C54518FB7756007CAC64 /* One.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = One.mp4; sourceTree = "<group>"; };
 		F363C54718FB788A007CAC64 /* OneStep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OneStep.mp3; sourceTree = "<group>"; };
 		F363C54918FB841D007CAC64 /* Jet.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jet.caf; sourceTree = "<group>"; };
+		F3D62A1018FC96C30090BF00 /* nasalization-rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nasalization-rg.ttf"; sourceTree = "<group>"; };
 		F3D8807818F0CC5D005D4797 /* Man On The Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Man On The Moon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8807B18F0CC5D005D4797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,7 +92,6 @@
 		F3D880A818F0CC5D005D4797 /* Man On The MoonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Man On The MoonTests-Info.plist"; sourceTree = "<group>"; };
 		F3D880AA18F0CC5D005D4797 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3D880AC18F0CC5D005D4797 /* Man_On_The_MoonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man_On_The_MoonTests.m; sourceTree = "<group>"; };
-		F3D880B718F0D280005D4797 /* nasalization-rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "nasalization-rg.ttf"; path = "../../../../../../../Downloads/nasalization/nasalization-rg.ttf"; sourceTree = "<group>"; };
 		F3D880B918F0D99E005D4797 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F3D880BA18F0D99E005D4797 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,10 +228,10 @@
 		F3D880B618F0D262005D4797 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F3D62A1018FC96C30090BF00 /* nasalization-rg.ttf */,
 				F363C54918FB841D007CAC64 /* Jet.caf */,
 				F363C54718FB788A007CAC64 /* OneStep.mp3 */,
 				F363C54518FB7756007CAC64 /* One.mp4 */,
-				F3D880B718F0D280005D4797 /* nasalization-rg.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -314,13 +314,13 @@
 			files = (
 				F3D8809A18F0CC5D005D4797 /* Images.xcassets in Resources */,
 				F363C53A18FB3660007CAC64 /* Page3View.xib in Resources */,
-				F3D880B818F0D280005D4797 /* nasalization-rg.ttf in Resources */,
 				F363C54A18FB841D007CAC64 /* Jet.caf in Resources */,
 				F363C54818FB788A007CAC64 /* OneStep.mp3 in Resources */,
 				F363C54618FB7756007CAC64 /* One.mp4 in Resources */,
 				F3D8808618F0CC5D005D4797 /* InfoPlist.strings in Resources */,
 				F3D8809818F0CC5D005D4797 /* Main.storyboard in Resources */,
 				F319750B18F8C4B50072639E /* Pages.plist in Resources */,
+				F3D62A1118FC96C30090BF00 /* nasalization-rg.ttf in Resources */,
 				F363C53618FAFFE2007CAC64 /* Page2View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
