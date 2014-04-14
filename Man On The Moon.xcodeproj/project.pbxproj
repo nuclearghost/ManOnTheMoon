@@ -17,6 +17,8 @@
 		F363C53D18FB3BFB007CAC64 /* Page4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C53C18FB3BFB007CAC64 /* Page4ViewController.m */; };
 		F363C54018FB5D23007CAC64 /* Page5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C53F18FB5D23007CAC64 /* Page5ViewController.m */; };
 		F363C54318FB5D2F007CAC64 /* Page6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C54218FB5D2F007CAC64 /* Page6ViewController.m */; };
+		F363C54618FB7756007CAC64 /* One.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F363C54518FB7756007CAC64 /* One.mp4 */; };
+		F363C54818FB788A007CAC64 /* OneStep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F363C54718FB788A007CAC64 /* OneStep.mp3 */; };
 		F3D8807C18F0CC5D005D4797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807B18F0CC5D005D4797 /* Foundation.framework */; };
 		F3D8807E18F0CC5D005D4797 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */; };
 		F3D8808018F0CC5D005D4797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807F18F0CC5D005D4797 /* UIKit.framework */; };
@@ -64,6 +66,8 @@
 		F363C53F18FB5D23007CAC64 /* Page5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page5ViewController.m; sourceTree = "<group>"; };
 		F363C54118FB5D2F007CAC64 /* Page6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page6ViewController.h; sourceTree = "<group>"; };
 		F363C54218FB5D2F007CAC64 /* Page6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page6ViewController.m; sourceTree = "<group>"; };
+		F363C54518FB7756007CAC64 /* One.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = One.mp4; sourceTree = "<group>"; };
+		F363C54718FB788A007CAC64 /* OneStep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OneStep.mp3; sourceTree = "<group>"; };
 		F3D8807818F0CC5D005D4797 /* Man On The Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Man On The Moon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8807B18F0CC5D005D4797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -224,6 +228,8 @@
 		F3D880B618F0D262005D4797 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F363C54718FB788A007CAC64 /* OneStep.mp3 */,
+				F363C54518FB7756007CAC64 /* One.mp4 */,
 				F35345A218F62CA0008888AF /* OneSmallStep.mp4 */,
 				F3D880B718F0D280005D4797 /* nasalization-rg.ttf */,
 			);
@@ -309,6 +315,8 @@
 				F3D8809A18F0CC5D005D4797 /* Images.xcassets in Resources */,
 				F363C53A18FB3660007CAC64 /* Page3View.xib in Resources */,
 				F3D880B818F0D280005D4797 /* nasalization-rg.ttf in Resources */,
+				F363C54818FB788A007CAC64 /* OneStep.mp3 in Resources */,
+				F363C54618FB7756007CAC64 /* One.mp4 in Resources */,
 				F3D8808618F0CC5D005D4797 /* InfoPlist.strings in Resources */,
 				F3D8809818F0CC5D005D4797 /* Main.storyboard in Resources */,
 				F319750B18F8C4B50072639E /* Pages.plist in Resources */,

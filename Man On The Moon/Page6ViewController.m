@@ -7,9 +7,12 @@
 //
 
 #import "Page6ViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface Page6ViewController ()
-
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @end
 
 @implementation Page6ViewController
@@ -26,7 +29,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+  NSString *videoFilePath = [[NSBundle mainBundle] pathForResource:@"One" ofType: @"mp4"];
+  NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:videoFilePath ];
+    self.moviePlayer = [[MPMoviePlayerController alloc]
+                     initWithContentURL:fileURL];
+  self.moviePlayer.scalingMode = MPMovieScalingModeAspectFill;
+  //self.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
+  
+  //[self.moviePlayer prepareToPlay];
+  
+  [self.moviePlayer.view setFrame:CGRectInset(self.view.bounds, 40.0, 240.0)];
+  [self.view addSubview:self.moviePlayer.view];
+  
+  //NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"OneStep" ofType: @"mp3"];
+  //NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath ];
+  //self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +54,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
+ didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+  NSLog(@"page 6 finished speaking");
+  [self.moviePlayer play];
+  //[self.audioPlayer play];
 }
-*/
 
 @end
