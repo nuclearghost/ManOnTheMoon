@@ -15,6 +15,8 @@
 		F363C53618FAFFE2007CAC64 /* Page2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = F363C53418FAFFE2007CAC64 /* Page2View.xib */; };
 		F363C53A18FB3660007CAC64 /* Page3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = F363C53918FB3660007CAC64 /* Page3View.xib */; };
 		F363C53D18FB3BFB007CAC64 /* Page4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C53C18FB3BFB007CAC64 /* Page4ViewController.m */; };
+		F363C54018FB5D23007CAC64 /* Page5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C53F18FB5D23007CAC64 /* Page5ViewController.m */; };
+		F363C54318FB5D2F007CAC64 /* Page6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F363C54218FB5D2F007CAC64 /* Page6ViewController.m */; };
 		F3D8807C18F0CC5D005D4797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807B18F0CC5D005D4797 /* Foundation.framework */; };
 		F3D8807E18F0CC5D005D4797 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */; };
 		F3D8808018F0CC5D005D4797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8807F18F0CC5D005D4797 /* UIKit.framework */; };
@@ -58,6 +60,10 @@
 		F363C53918FB3660007CAC64 /* Page3View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page3View.xib; sourceTree = "<group>"; };
 		F363C53B18FB3BFB007CAC64 /* Page4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page4ViewController.h; sourceTree = "<group>"; };
 		F363C53C18FB3BFB007CAC64 /* Page4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page4ViewController.m; sourceTree = "<group>"; };
+		F363C53E18FB5D23007CAC64 /* Page5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page5ViewController.h; sourceTree = "<group>"; };
+		F363C53F18FB5D23007CAC64 /* Page5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page5ViewController.m; sourceTree = "<group>"; };
+		F363C54118FB5D2F007CAC64 /* Page6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page6ViewController.h; sourceTree = "<group>"; };
+		F363C54218FB5D2F007CAC64 /* Page6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page6ViewController.m; sourceTree = "<group>"; };
 		F3D8807818F0CC5D005D4797 /* Man On The Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Man On The Moon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8807B18F0CC5D005D4797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3D8807D18F0CC5D005D4797 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,6 +116,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F363C54418FB5D4A007CAC64 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				F319750A18F8C4B50072639E /* Pages.plist */,
+				F319750F18F8DC570072639E /* Page1ViewController.h */,
+				F319751018F8DC570072639E /* Page1ViewController.m */,
+				F363C53B18FB3BFB007CAC64 /* Page4ViewController.h */,
+				F363C53C18FB3BFB007CAC64 /* Page4ViewController.m */,
+				F363C53E18FB5D23007CAC64 /* Page5ViewController.h */,
+				F363C53F18FB5D23007CAC64 /* Page5ViewController.m */,
+				F363C54118FB5D2F007CAC64 /* Page6ViewController.h */,
+				F363C54218FB5D2F007CAC64 /* Page6ViewController.m */,
+				F363C53418FAFFE2007CAC64 /* Page2View.xib */,
+				F363C53918FB3660007CAC64 /* Page3View.xib */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
 		F3D8806F18F0CC5D005D4797 = {
 			isa = PBXGroup;
 			children = (
@@ -154,20 +178,14 @@
 				F3D8809118F0CC5D005D4797 /* DataViewController.m */,
 				F3D8809318F0CC5D005D4797 /* ModelController.h */,
 				F3D8809418F0CC5D005D4797 /* ModelController.m */,
-				F319750F18F8DC570072639E /* Page1ViewController.h */,
-				F319751018F8DC570072639E /* Page1ViewController.m */,
-				F319750C18F8CDF90072639E /* PageModel.h */,
-				F319750D18F8CDF90072639E /* PageModel.m */,
-				F319750A18F8C4B50072639E /* Pages.plist */,
-				F3D8809618F0CC5D005D4797 /* Main.storyboard */,
-				F363C53B18FB3BFB007CAC64 /* Page4ViewController.h */,
-				F363C53C18FB3BFB007CAC64 /* Page4ViewController.m */,
-				F363C53418FAFFE2007CAC64 /* Page2View.xib */,
-				F363C53918FB3660007CAC64 /* Page3View.xib */,
 				F3D880B918F0D99E005D4797 /* HomeViewController.h */,
 				F3D880BA18F0D99E005D4797 /* HomeViewController.m */,
 				F363C52F18FAFA83007CAC64 /* CreditsViewController.h */,
 				F363C53018FAFA83007CAC64 /* CreditsViewController.m */,
+				F319750C18F8CDF90072639E /* PageModel.h */,
+				F319750D18F8CDF90072639E /* PageModel.m */,
+				F363C54418FB5D4A007CAC64 /* Pages */,
+				F3D8809618F0CC5D005D4797 /* Main.storyboard */,
 				F3D8809918F0CC5D005D4797 /* Images.xcassets */,
 				F3D8808218F0CC5D005D4797 /* Supporting Files */,
 			);
@@ -314,7 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F363C54018FB5D23007CAC64 /* Page5ViewController.m in Sources */,
 				F319750E18F8CDF90072639E /* PageModel.m in Sources */,
+				F363C54318FB5D2F007CAC64 /* Page6ViewController.m in Sources */,
 				F3D8809218F0CC5D005D4797 /* DataViewController.m in Sources */,
 				F3D8808C18F0CC5D005D4797 /* AppDelegate.m in Sources */,
 				F363C53118FAFA83007CAC64 /* CreditsViewController.m in Sources */,

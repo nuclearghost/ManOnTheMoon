@@ -26,5 +26,17 @@
 		<key>Nib</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Page5ViewController</string>
+		<key>Nib</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Page6ViewController</string>
+		<key>Nib</key>
+		<false/>
+	</dict>
 </array>
 </plist>
